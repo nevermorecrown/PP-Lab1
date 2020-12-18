@@ -10,7 +10,7 @@ typedef struct experiment_result {
 } experiment_result;
 
 experiment_result *
-run_experiments(unsigned *V, size_t count, double (*randomize)(unsigned *, unsigned, unsigned, unsigned), unsigned min,
+run_experiments(unsigned *V, unsigned count, double (*randomize)(unsigned *, unsigned, unsigned, unsigned), unsigned min,
                 unsigned max);
 
 void print_experiment_results(const experiment_result *results);
